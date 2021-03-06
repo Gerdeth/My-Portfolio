@@ -80,14 +80,14 @@ h3{
     
 }
 
-.me img{
+.aboutMeInfo img{
     max-width: 100%;
     height:auto;
 }
 
    
 
-.me{
+.aboutMeInfo{
     /* text-align: center; */
     margin:auto;
     background-color:rgb(114, 175, 157);
