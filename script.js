@@ -1,4 +1,4 @@
-const message = " Web developer with a background in STEM education"
+const message = " A Web developer with a background in STEM education"
 
 let index=0;
 function writeMessage(){

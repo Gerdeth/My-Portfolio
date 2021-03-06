@@ -3,75 +3,19 @@ body{
     color:white;
 }
 
-.navbar{
-    background-color:rgb(114, 175, 157);
-    position:fixed;
-    width:100%; 
-    height:auto; 
- 
-    
-}
-.navbar ul{
-    display:flex;
-    list-style: none;
 
-}
 
-#front-center{
-    /* background: url( "https://images.unsplash.com/photo-1613427924070-d03cbf10bb3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") no-repeat center center fixed; */
-    /* background: url("https://images.unsplash.com/photo-1564325724739-bae0bd08762c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c2NpZW5jZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
-    background: url("https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHNjaWVuY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-    background-size: cover;
-    height:100vh; 
-   
-    
-    
-}
 
-.text{
-    color:inherit;
-    display:block;
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-}
 
-#projects{
+
+
+
+#contactMe{
     height:100vh;
     padding-top: 5rem;
     text-align: center;
-    
 }
-h3{
-    padding-bottom: 5rem;
-    text-align: center;
-    padding-bottom: 5rem;
-}   
-
-.card-group{
-    
-    justify-content: space-evenly;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    
-    
-    
-}
-.card-group .card{
-    background-color:rgb(114, 175, 157);
-    height:60vh;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 3px solid white;
-    box-shadow: 5px 10px #525050;
-
-   
-}
-
-
 #aboutMe{
     background: url("images/cool-background.png");
     height:100vh;
@@ -88,7 +32,7 @@ h3{
    
 
 .aboutMeInfo{
-    /* text-align: center; */
+    list-style: none;
     margin:auto;
     background-color:rgb(114, 175, 157);
     width:25%;
@@ -97,18 +41,116 @@ h3{
     border: 3px solid white;
     box-shadow: 5px 10px #525050;
 }
-#contactMe{
+#projects{
     height:100vh;
     padding-top: 5rem;
     text-align: center;
+    
+    
 }
-@media screen and (max-width: 480px){
-    .card-text {
-        font-size:10px;
+h3{
+    padding-bottom: 5rem;
+    text-align: center;
+}   
+
+.card-group{
+    width:80vw;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin:auto;
+       
+}
+.card{
+    background-color:rgb(114, 175, 157);
+    height:60vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid white;
+    box-shadow: 5px 10px #525050;
+    margin-right:10px;
+
+   
+}
+.card:hover{
+    color:rgb(3,20,6);
+}
+#front-center{
+    /* background: url( "https://images.unsplash.com/photo-1613427924070-d03cbf10bb3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") no-repeat center center fixed; */
+    /* background: url("https://images.unsplash.com/photo-1564325724739-bae0bd08762c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c2NpZW5jZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
+    background: url("https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHNjaWVuY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    height:100vh; 
+   
+   
+    
+    
+}
+
+.display-text{
+    color:inherit;
+    position:absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    margin:auto;
+    transform: translate(-50%, -50%);
+    flex:1;
+   
+
+}
+
+.navbar{
+    background-color:rgb(114, 175, 157);
+    position:fixed;
+    width:100%; 
+    z-index:1; 
+    overflow: hidden;
+    
+ 
+    
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+
+}
+.active{
+    font-weight:600;
+    font-size: larger;
+}
+
+.active:hover, .nav-link:hover{
+    color:white;
+}
+
+.nav-liks{
+    margin-bottom:0;
+}
+@media screen and (max-width: 768px){
+    #projects{
+        height:auto;
+    }
+    .card-text{
+        font-size:7px;
       }
     .card-title{
 
-        font-size:20px;
+        font-size:9px;
      
     }
+     .card {
+        height:230px;
+    }
+    .aboutMeInfo{
+        font-size: 7px;
+        height:200px;
+        width:200px;
+       
+    }
+    .aboutMeInfo img{
+        width:100px;
+        height:100px;
+    }
+    
 }
