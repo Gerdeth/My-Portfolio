@@ -10,4 +10,8 @@ function writeMessage(){
 
 setInterval(writeMessage, 200)
 
+// const btn= document.createElement("button");
+// btn.innerHTML="GitHub";
 
+// const card=document.querySelector(".card-title");
+// card.appendChild(btn);
